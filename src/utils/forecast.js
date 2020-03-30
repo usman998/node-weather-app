@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
             callback('coordinate error', undefined)
         }
         else {
-            callback(undefined, response.body.daily.data[0].summary + ' it is currently ' + response.body.currently.temperature + ' and the chances of rain is ' + response.body.currently.precipProbability)
+            callback(undefined, response.body.daily.data[0].summary + ' it is currently ' + response.body.currently.temperature + ' and the chances of rain is ' + response.body.currently.precipProbability +' and the moon phase is ' + response.body.daily.data[0].moonPhase)
         }   
     })
 }

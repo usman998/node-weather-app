@@ -65,7 +65,8 @@ app.get('/weather', (req, res)=>{
             res.send({
                 forecaste: forecastata,
                 placename,
-                address: req.query.address
+                address: req.query.address,
+                time: 'timezone'
             })
             
     })
